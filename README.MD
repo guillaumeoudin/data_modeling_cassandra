@@ -59,6 +59,47 @@ To achieve this, we're going to model our data this way : **1 query = 1 table**.
 
 `*primary keys`
 
+# Quick Start
+
+## Requirements
+You need to have installed on your machine :
+
+- python (3.8 or above)
+- docker
+- docker-compose
+
+## Project Structure
+```
+data-modeling-cassandra
+├── README.MD
+├── requirements.txt
+├── docker-compose.yml
+├── event_data
+│   ├── (event csv files)
+├── event_datafile_new.csv
+├── images
+│   └── image_event_datafile_new.jpg
+├── etl_modeling.ipynb
+```
+
+## Installation 
+Run this command to clone the repository of the project
+```bash
+$ git clone https://github.com/guillaumeoudin/data_modeling_cassandra
+```
+Then place yourself into the local repository
+```bash
+$ cd data_modeling_cassandra
+```
+Setup a virtual envionement for the project and initialize it
+```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
+Install needed dependencies
+```
+$ pip install -r requirements.txt
+```
 
 
 
