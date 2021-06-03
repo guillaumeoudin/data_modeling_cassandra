@@ -76,7 +76,6 @@ data-modeling-cassandra
 ├── docker-compose.yml
 ├── event_data
 │   ├── (event csv files)
-├── event_datafile_new.csv
 ├── images
 │   └── image_event_datafile_new.jpg
 ├── etl_modeling.ipynb
