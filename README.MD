@@ -101,6 +101,17 @@ Install needed dependencies
 $ pip install -r requirements.txt
 ```
 
+*Note : once finished working on the project, to close the virtual environment just run `deactivate`*
+
+Next we will run a local Apache Cassandra database with appropriate user/passwords credentials inside a docker container, and we will automatize this process using docker-compose *(see the `docker-compose.yml` file for reference)*.
+```bash
+$ docker-compose up -d 
+```
+Check the docker container is effectively running :
+```
+$ docker ps
+```
+
 ## Instructions
 Launch the Jupyter Notebook App
 ```bash
@@ -115,3 +126,8 @@ Remove the docker container and network created by the docker-compose file :
 $ docker rm cass-nodeA && docker network rm data_modeling_cassandra_cass_local_network
 ```
 
+Check the container and networks have been removed
+```bash
+$ docker ps -aq
+$ docker network ls
+```
