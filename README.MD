@@ -125,7 +125,7 @@ Remove the docker container and network created by the docker-compose file :
 ```bash
 $ docker stop cass-nodeA
 $ docker rm cass-nodeA
-$ docker network rm data_modeling_cassandra_cass_local_network
+$ docker network rm data_modeling_cassandra_cass-local-network
 ```
 
 Check the container and networks have been removed
