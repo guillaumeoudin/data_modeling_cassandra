@@ -101,5 +101,17 @@ Install needed dependencies
 $ pip install -r requirements.txt
 ```
 
+## Instructions
+Launch the Jupyter Notebook App
+```bash
+$ jupyter notebook
+``` 
+Then launch the notebook file `etl_modeling.ipynb` and execute the code inside.
 
+## Cleaning step
+
+Remove the docker container and network created by the docker-compose file :
+```bash
+$ docker rm cass-nodeA && docker network rm data_modeling_cassandra_cass_local_network
+```
 
