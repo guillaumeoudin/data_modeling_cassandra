@@ -9,7 +9,7 @@ services:
     image: "cassandra" # use latest official cassandra version
     container_name: "cass-nodeA" # naming container for easier identification and shutdown
     networks:
-      - cass_local_network
+      - cass-local-network
     ports:
       - '7000:7000'
       - '9042:9042' # Mapping ports

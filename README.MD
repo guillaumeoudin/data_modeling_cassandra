@@ -123,7 +123,9 @@ Then launch the notebook file `etl_modeling.ipynb` and execute the code inside.
 
 Remove the docker container and network created by the docker-compose file :
 ```bash
-$ docker rm cass-nodeA && docker network rm data_modeling_cassandra_cass_local_network
+$ docker stop cass-nodeA
+$ docker rm cass-nodeA
+$ docker network rm data_modeling_cassandra_cass_local_network
 ```
 
 Check the container and networks have been removed
