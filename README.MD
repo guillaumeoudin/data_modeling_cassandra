@@ -102,7 +102,7 @@ $ pip install -r requirements.txt
 
 *Note : once finished working on the project, to close the virtual environment just run `deactivate`*
 
-Next we will run a local Apache Cassandra database with appropriate user/passwords credentials inside a docker container, and we will automatize this process using docker-compose *(see the `docker-compose.yml` file for reference)*.
+Next we will run a local Apache Cassandra database inside a docker container, and we will automatize this process using docker-compose *(see the `docker-compose.yml` file for reference)*.
 ```bash
 $ docker-compose up -d 
 ```
